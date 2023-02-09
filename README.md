@@ -1,44 +1,35 @@
-# ser
+# Simple Backend Clojure App
 
-FIXME: description
+Used for demonstrative purposes during a live code session at Oulu University, Software Engineering Research course.
+
+Implements a small backend software, with a mock database and couple of API routes.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Clone the repo.
+
+Install OpenJDK for Java https://adoptium.net/
+
+Install Leiningen for running Clojure programs simply https://leiningen.org/
 
 ## Usage
 
-FIXME: explanation
+In the root directory (the one with `project.clj`) run `lein repl` to launch the REPL.
 
-    $ java -jar ser-0.1.0-standalone.jar [args]
+To run the backend, run the command `(start)` in the REPL, which starts and mounts the Jetty web server.
 
-## Options
+The server runs on `localhost:8880` with the API at `localhost:8880/api/**`, there's a Swagger interface available.
 
-FIXME: listing of options this app accepts.
+The app uses a few libraries, namely Mount Lite for componentization, Ring & Reitit for http route handling, Muuntaja for data mangling.
 
-## Examples
+https://github.com/ring-clojure/ring
 
-...
+https://github.com/aroemers/mount-lite
 
-### Bugs
+https://github.com/metosin/reitit
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+https://github.com/metosin/muuntaja
 
 ## License
 
-Copyright © 2022 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+You can use this any way you want.
