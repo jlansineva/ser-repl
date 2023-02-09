@@ -50,8 +50,8 @@
        ["/pizzas" {:get {:handler get-pizzas}}]
        ["/pizzerias" {:get {:handler get-pizzerias}}]
        ["/pizza"
-        ["/topping" {:get {:handler get-pizza-with-topping}}]
-        ["/bitcoin" {:get {:handler get-bitcoin-price}}]]]
+        ["/topping" {:get {:parameters {:query {:topping string?}}
+                           :handler get-pizza-with-topping}}]]]
 
 
 
